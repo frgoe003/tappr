@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
   display: grid;
-  background: #333e5a;
 }
 
 a {
@@ -18,7 +17,7 @@ header {
 
 main {
   min-height: 80vh;
-  background: #fff;
+  background-image: url('bg.png');
 }
 main .controls {
   text-align: center;

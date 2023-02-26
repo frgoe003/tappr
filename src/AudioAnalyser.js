@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AudioVisualiser from './useCanvas';
+import AudioVisualiser from './AudioVisualiser';
 
 class AudioAnalyser extends Component {
   constructor(props) {
