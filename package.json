@@ -1,5 +1,5 @@
 {
-  "name": "react-web-audio",
+  "name": "tappr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "This is an example application that shows how to visualise audio from the microphone using the Web Audio API in React.",
+  "description": "Magenta.js+react",
   "main": "index.js",
   "repository": {
     "type": "git",

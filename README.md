@@ -23,3 +23,13 @@ Start the application:
 ```bash
 npm start
 ```
+
+## References
+
+This app was built using the following Node Modules:
+
+*Tone.js
+*Magenta.js
+*React
+
+Audio samples were partly taken from **_Deep House Drum Samples_**, produced by [Biochron](https://soundpacks.com/company/biochron/)
