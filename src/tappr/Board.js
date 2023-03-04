@@ -26,6 +26,7 @@ let RNNsteps = 30;
 let speed = 2;
 let drops = AddDrop(0,10,42,'white',[])
 let { paddleProps, player } = data;
+let screenAspectRatio = window.innerHeight/window.innerWidth
 
 // selecters
 const sampleMap = {
@@ -55,7 +56,6 @@ async function dropsFromRNN(){
     RNNseq.sequence.then((seq) => addSeq(seq))
   });
 }
-
 
 // add new RNNsequence to screen
 function addSeq(seq){
@@ -90,7 +90,8 @@ function addSeq(seq){
 //MAIN Render
 export default function Board() {
   const canvasRef = useRef(null);
-  let yLine = 500/2; //############################ you really need to fix this bru
+
+  let yLine = window.innerHeight/2; //############################ you really need to fix this bru
 
   //dropdown handler
   const getInitialState = () => {
@@ -155,25 +156,16 @@ export default function Board() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1 className="gameHeader">Tappr</h1>
       <canvas
         id="canvas"
         ref={canvasRef}
-        onMouseMove={(event) =>
-          (paddleProps.x =
-            event.clientX -
-            (window.innerWidth < 900 ? 10 : (window.innerWidth * 20) / 200) -
-            paddleProps.width / 2 -
-            10)
+        height={
+          screenAspectRatio*1 > 1 ? window.innerHeight*0.8 : window.innerHeight*0.5
         }
-        height="500"
         width={
-          window.innerWidth < 900
-            ? window.innerWidth - 20
-            : window.innerWidth - (window.innerWidth * 20) / 100
+          screenAspectRatio*1 > 1 ? window.innerWidth*0.9 : window.innerWidth*0.6
         }
       />
-      
       <button onClick={dropsFromMelody}>Melody!</button>
       <button onClick={playVAE}>playVAE!</button>
       <button onClick={dropsFromRNN}>playRNN!</button>
@@ -183,7 +175,7 @@ export default function Board() {
         <p>{`Temperature: ${temperature}`}</p>
       </div>
       <div>
-        <input type="range" min="0.5" max="10" step="0.1" defaultValue="2" onChange={setSpeed}></input>
+        <input type="range" min="0.5" max="10" step="0.1" defaultValue="5" onChange={setSpeed}></input>
         <p>{`Speed`}</p>
       </div>
       <div>

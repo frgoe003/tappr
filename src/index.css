@@ -17,7 +17,8 @@ header {
 
 main {
   min-height: 80vh;
-  background-image: url('bg.png');
+  background-color: rgb(201, 201, 201);
+  /*background-image: url('bg.png');*/
 }
 main .controls {
   text-align: center;

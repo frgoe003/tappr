@@ -11,8 +11,8 @@
     "tone": "^14.7.77"
   },
   "scripts": {
-    "build": "react-scripts build --openssl-legacy-provider",
-    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

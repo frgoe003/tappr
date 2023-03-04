@@ -19,12 +19,6 @@ import hihat22 from "./utils/hat_lilcloser.wav"
 import snare3 from "./utils/snr_royalty.wav"
 import shaker3 from "./utils/shaker_bot.wav"
 
-/*
-
-*/
-
-
-
 const clap = new Audio(clap3); //+++
 
 const drumSamples = new Tone.ToneAudioBuffers({
@@ -70,8 +64,6 @@ function playNote(pitch){
 
 
 export {playNote,testAudio}
-
-
 
 /*
   'Kick', 1

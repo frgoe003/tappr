@@ -44,11 +44,9 @@ class App extends Component {
   render() {
 
     return (
-    <div style={{width: "600px"}}>
-      <div style={{ position: "relative"}}>
-
+    <div>
+      <div style={{position: "relative"}}>
       <Board/>
-
       <button onClick={this.resumeAudio}>resume audio</button>
       <button onClick={this.toggleMicrophone}>
           {this.state.audio ? 'Stop microphone' : 'Get microphone input'}
