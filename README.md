@@ -2,10 +2,6 @@
 
 Experimenting with ![Magenta.js](https://github.com/magenta/magenta-js); fiddling around with rhythm generation (ongoing)
 
-## How to build the app
-
-tbd
-
 ## How to run the app
 
 You need Node.js installed to run the application.
