@@ -20,6 +20,14 @@ Start the application:
 npm start
 ```
 
+## Preview
+
+Here's a quick preview of the tappr:
+
+![Preview](preview.png)
+
+The basic idea is that the VAE generates a rhythm, which the player has to match. If he fails to do so 5x, the game ends. 
+
 ## References
 
 This app was built using the following Node Modules:
